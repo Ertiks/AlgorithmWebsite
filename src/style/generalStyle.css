@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css?family=Inria Sans');
+
+body {
+
+    font-family: sans-serif;
+    color: white;
+    background-color: #191A1E;
+    margin: 0px;
+}
+
+.mainContent {
+    font-family: 'Inria Sans';
+    padding: 20px;
+}
+
+.mainContent ul li{
+    margin: 0px;
+    line-height: 18px;
+}
+.mainContent ul li::marker{
+    color: rgb(146, 151, 188);
+    list-style-type: disc;
+    font-size: 20px;
+}
+
+.mainTitle {
+    font-size: 50px;
+    margin-bottom: 2px;
+}
+.titleParagraph {
+    margin-bottom: 70px;
+}
+.listTitle {
+    line-height: 0px;
+    padding-block: 5px;
+    font-size: 18px;
+}
+
+
+.secondaryTitle {
+    font-size: 35px;
+    margin-bottom: 2px;
+}
+
+.header {
+    font-family:'Inria Sans';
+    background-color: #0E0E0E;
+}
+
+
+.titleHeader {
+    font-size: 28px;
+}
+
+.nav {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    border-bottom: solid 1px rgb(198, 206, 200);
+}
+
+.nav-items {
+    list-style: none;
+    display: flex;
+}
+
+.nav-items li {
+    padding: 30px;
+}
+
+.logo {
+    margin: 10px;
+    margin-bottom: 30px;
+    margin-left: 25px;
+    width: 100px;
+}
+
+.footer {
+    color: rgb(114, 114, 114);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%; /* Prend toute la largeur */
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+}
+
