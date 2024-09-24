@@ -16,7 +16,7 @@ export default function MainContent(){
         <li> Au secour ??? </li>
         <li> Je ne comprends rien a React ! </li>
       </ul>
-  
+      
     </div>
     );
   }
