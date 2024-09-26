@@ -1,22 +1,14 @@
+import Canvas from "./Canvas";
+
 export default function MainContent(){
+  
     return(
-    <div className='mainContent'>
+    <div className='main--content'>
       
-      <div className="titleParagraph">
-      <h1 className="mainTitle">La cabane d'Inu</h1>
-      Bienvenue dans la cabane d'Inu.
-      </div>
-
-      <h2 className="secondaryTitle"> Ma page web est NAZE! </h2>
-      <br/>
-
-      <p className="listTitle">Pourquoi ma page web est naze en trois points : </p>
-      <ul>
-        <li> Je suis naze en HTML </li>
-        <li> Au secour ??? </li>
-        <li> Je ne comprends rien a React ! </li>
-      </ul>
+      <h2> Mon premier article </h2>
+      Bref j'en sais rien mais c'est sur ce composant que je vais placer tout mes différents "articles" techniques (je l'espère)!
       
+      <Canvas />
     </div>
     );
   }

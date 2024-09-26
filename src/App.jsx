@@ -6,30 +6,26 @@ import Footer from "./components/FooterComponent"
 import Header from "./components/HeaderComponent"
 import MainContent from './components/MainContentComponent';
 
-import { createBrowserRouter, RouterProvider , Link} from 'react-router-dom'
+import { createBrowserRouter, RouterProvider , Link, Outlet} from 'react-router-dom'
 
 const router = createBrowserRouter([
   {
     path : "/",
     element: 
       <div>
-        <nav>
-          <Link to="/blog"> Blog </Link>
-          <Link to="/"> Accueil </Link>
-        </nav>
-        Page d'accueil 
-      </div>
-  },
-  {
-    path : "/blog",
-    element: 
-    <div>
-      <nav>
-        <Link to="/blog"> Blog </Link>
-        <Link to="/"> Accueil </Link>
-      </nav>
-        Page 1 
-    </div>
+        <Header />
+        <Outlet/>
+      </div>,
+    children: [
+      {
+        path : "/algorithms",
+        element: <MainContent />,
+      },
+      {
+        path : "/",
+        element: <div> ACCUEIL </div>
+      }
+    ]
   }
 ])
 
@@ -48,3 +44,4 @@ function App() {
 }
 
 export default App
+
